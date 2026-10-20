@@ -13,7 +13,7 @@ try:
 except Exception:
     api_key = os.getenv("DEEPSEEK_API_KEY")
 
-client = OpenAI(api_key="sk-be182a72a8be40ffa4b673392ae20b8e", base_url="https://api.deepseek.com/v1")
+client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com/v1")
 
 # 3. 样式注入
 st.markdown("""
